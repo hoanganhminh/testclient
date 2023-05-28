@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-guest {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px;
+        border: 2px solid #e7e7e7;
+    }
+
+    .header-guest .left {
+        justify-content: left;
+    }
+
+    .header-guest .left .logo {
+        width: 200px;
+    }
+
+    .header-guest .right {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-guest .right .nav-link {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-guest .right .nav-link .box {
+        padding: 10px;
+        margin: 0 20px;
+        text-decoration: none;
+        color: #74768F;
+    }
+
+    .header-guest .right .login-logout {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-guest .right .login-logout .login-link {
+        padding: 16px 24px;
+        color: #FBFBFB;
+        border-radius: 8px;
+        background-color: #0265B1;
+        text-decoration: none;
+        margin-left: 15px;
+    }
+
+    .body-guest {
+        margin: 12px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #e7e7e7;
+    }
+
+    .body-guest .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-bottom: 1px solid #EAECF0;
+    }
+
+    .body-guest .header .left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .body-guest .header .left h2 {
+        margin: 0;
+        color: #0A157A;
+        font-size: 36px;
+        font-weight: 700;
+        margin: 0 5px;
+    }
+
+    .body-guest .header .right {
+        display: flex;
+    }
+
+    .body-guest .header .right .filters {
+        margin: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .body-guest .header .right .filters a {
+        margin: 0 6px;
+        color: #344054;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .body-guest .header .right .search {
+        background-color: white;
+        padding: 10px;
+        border-radius: 28px;
+        height: 60px;
+        width: 400px;
+        border: 1px solid #AAAAAA;
+        margin: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .body-guest .header .right .search input {
+        width: 65%;
+        font-size: 16px;
+        color: #777777;
+        border: 0px;
+    }
+
+    .body-guest .header .right .search .search-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .body-guest .header .right .search .search-btn button {
+        color: white;
+        background-color: #0265B1;
+        font-weight: 600;
+        font-size: 12px;
+        padding: 6px 8px;
+        width: 112px;
+        height: 42px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .body-guest .grid {
+        padding: 20px;
+    }
+
+    .body-guest .grid .box-partner {
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .body-guest .grid .box-partner .card-background {
+        background-color: #e6f6fa;
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid #AAAAAA;
+        border-radius: 6px;
+        width: 350px;
+    }
+
+    .body-guest .grid .box-partner .card-background img {
+        height: 250px;
+        width: 320px;
+        background-color: white;
+        background: #FFFFFF;
+        border: 1px solid #AAAAAA;
+        border-radius: 15px;
+    }
+
+    .body-guest .grid .box-partner .card-background p {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 36px;
+        color: #020202;
+        margin: 25px auto;
+    }
+
+    .body-guest .grid .box-partner .card-background button {
+        background: #F36523;
+        border-radius: 12px;
+        color: white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 44px;
+        padding: 5px 20px;
+        width: 100%;
+    }
+</style>
+
+<body>
+    <div class="header-guest">
+        <div class="left">
+            <img class="logo" src="Assets/image/FPT_Education_logo.svg.png" alt="">
+        </div>
+        <div class="right">
+            <div class="nav-link">
+                <a class="box" href="">Trang chủ</a>
+                <a class="box" href="">Về chúng tôi</a>
+                <a class="box" href="">Cơ hội việc làm</a>
+                <a class="box" href="">Học kỳ OJT</a>
+                <a class="box" href="">Tin tức</a>
+                <a class="box" href="">Liên hệ</a>
+            </div>
+            <div class="login-logout">
+                <a href="" class="login-link">Đăng Nhập</a>
+                <a href="" class="login-link">Đăng Xuất</a>
+            </div>
+        </div>
+    </div>
+    <div class="body-guest">
+        <div class="header">
+            <div class="left">
+                <h2>Thông tin doanh nghiệp</h2>
+            </div>
+            <div class="right">
+                <div class="filters">
+                    <i class="fa fa-filter"></i> <a href="">Filters</a>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <div class="search-btn">
+                        <button><i class="fa fa-search"></i> Search</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid row">
+            <div class="col-md-4 box-partner">
+                <div class="card-background">
+                    <img src="https://pinetree.vn/wp-content/uploads/2022/08/FPT-1.jpg" alt="">
+                    <p>Company Name</p>
+                    <button>Xem thêm</button>
+                </div>
+            </div>
+            <div class="col-md-4 box-partner">
+                <div class="card-background">
+                    <img src="https://pinetree.vn/wp-content/uploads/2022/08/FPT-1.jpg" alt="">
+                    <p>Company Name</p>
+                    <button>Xem thêm</button>
+                </div>
+            </div>
+            <div class="col-md-4 box-partner">
+                <div class="card-background">
+                    <img src="https://pinetree.vn/wp-content/uploads/2022/08/FPT-1.jpg" alt="">
+                    <p>Company Name</p>
+                    <button>Xem thêm</button>
+                </div>
+            </div>
+            <div class="col-md-4 box-partner">
+                <div class="card-background">
+                    <img src="https://pinetree.vn/wp-content/uploads/2022/08/FPT-1.jpg" alt="">
+                    <p>Company Name</p>
+                    <button>Xem thêm</button>
+                </div>
+            </div>
+            <div class="col-md-4 box-partner">
+                <div class="card-background">
+                    <img src="https://pinetree.vn/wp-content/uploads/2022/08/FPT-1.jpg" alt="">
+                    <p>Company Name</p>
+                    <button>Xem thêm</button>
+                </div>
+            </div>
+            <div class="col-md-4 box-partner">
+                <div class="card-background">
+                    <img src="https://pinetree.vn/wp-content/uploads/2022/08/FPT-1.jpg" alt="">
+                    <p>Company Name</p>
+                    <button>Xem thêm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
