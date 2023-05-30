@@ -65,52 +65,52 @@
         margin-left: 15px;
     }
 
-    .body-partner {
+    .body-guest {
         margin: 12px;
         padding: 10px;
         border-radius: 10px;
         border: 1px solid #e7e7e7;
     }
 
-    .body-partner .header {
+    .body-guest .header {
         display: flex;
         justify-content: space-between;
         background-color: white;
         border-bottom: 1px solid #EAECF0;
     }
 
-    .body-partner .header .left {
+    .body-guest .header .left {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .body-partner .header .left h2 {
+    .body-guest .header .left h2 {
         color: #0A157A;
         font-size: 36px;
         font-weight: 700;
         margin: 10px 5px;
     }
 
-    .body-partner .header .right {
+    .body-guest .header .right {
         display: flex;
     }
 
-    .body-partner .header .right .filters {
+    .body-guest .header .right .filters {
         margin: 0 20px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .body-partner .header .right .filters a {
+    .body-guest .header .right .filters a {
         margin: 0 6px;
         color: #344054;
         text-decoration: none;
         font-size: 14px;
     }
 
-    .body-partner .header .right .search {
+    .body-guest .header .right .search {
         background-color: white;
         padding: 10px;
         border-radius: 28px;
@@ -122,20 +122,20 @@
         justify-content: space-between;
     }
 
-    .body-partner .header .right .search input {
+    .body-guest .header .right .search input {
         width: 65%;
         font-size: 16px;
         color: #777777;
         border: 0px;
     }
 
-    .body-partner .header .right .search .search-btn {
+    .body-guest .header .right .search .search-btn {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .body-partner .header .right .search .search-btn button {
+    .body-guest .header .right .search .search-btn button {
         color: white;
         background-color: #0265B1;
         font-weight: 600;
@@ -147,11 +147,11 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
-    .body-partner .grid {
+    .body-guest .grid {
         padding: 20px;
     }
 
-    .body-partner .grid .box-partner {
+    .body-guest .grid .box-partner {
         padding: 5px;
         display: flex;
         justify-content: center;
@@ -159,7 +159,7 @@
         margin-bottom: 20px;
     }
 
-    .body-partner .grid .box-partner .card-background {
+    .body-guest .grid .box-partner .card-background {
         background-color: #e6f6fa;
         padding: 16px;
         display: flex;
@@ -171,7 +171,7 @@
         width: 350px;
     }
 
-    .body-partner .grid .box-partner .card-background img {
+    .body-guest .grid .box-partner .card-background img {
         height: 250px;
         width: 320px;
         background-color: white;
@@ -180,7 +180,7 @@
         border-radius: 15px;
     }
 
-    .body-partner .grid .box-partner .card-background p {
+    .body-guest .grid .box-partner .card-background p {
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
@@ -189,7 +189,11 @@
         margin: 25px auto;
     }
 
-    .body-partner .grid .box-partner .card-background button {
+    .body-guest .grid .box-partner .card-background a {
+        width: 100%;
+    }
+
+    .body-guest .grid .box-partner .card-background button {
         background: #F36523;
         border-radius: 12px;
         color: white;
@@ -201,13 +205,13 @@
         width: 100%;
     }
 
-    .body-partner .pagination {
+    .body-guest .pagination {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .body-partner .pagination button {
+    .body-guest .pagination button {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -247,10 +251,10 @@
             <div class="nav-link">
                 <a class="box" href="">Trang chủ</a>
                 <a class="box" href="">Về chúng tôi</a>
-                <a class="box" href="partners-guest.html">Cơ hội việc làm</a>
+                <a class="box" href="">Cơ hội việc làm</a>
                 <a class="box" href="">Học kỳ OJT</a>
                 <a class="box" href="">Tin tức</a>
-                <a class="box" href="Contact-guest.html">Liên hệ</a>
+                <a class="box" href="">Liên hệ</a>
             </div>
             <div class="login-logout">
                 <a href="" class="login-link">Đăng Nhập</a>
@@ -258,7 +262,7 @@
             </div>
         </div>
     </div>
-    <div class="body-partner">
+    <div class="body-guest">
         <div class="header">
             <div class="left">
                 <h2>Thông tin doanh nghiệp</h2>
@@ -281,42 +285,42 @@
                 <div class="card-background">
                     <img src="https://pinetree.vn/wp-content/uploads/2022/08/FPT-1.jpg" alt="">
                     <p>Company Name</p>
-                    <button>Xem thêm</button>
+                    <a href="partner-details-guest.html"><button>Xem thêm</button></a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 box-partner">
                 <div class="card-background">
                     <img src="https://pinetree.vn/wp-content/uploads/2022/08/FPT-1.jpg" alt="">
                     <p>Company Name</p>
-                    <button>Xem thêm</button>
+                    <a href="partner-details-guest.html"><button>Xem thêm</button></a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 box-partner">
                 <div class="card-background">
                     <img src="https://pinetree.vn/wp-content/uploads/2022/08/FPT-1.jpg" alt="">
                     <p>Company Name</p>
-                    <button>Xem thêm</button>
+                    <a href="partner-details-guest.html"><button>Xem thêm</button></a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 box-partner">
                 <div class="card-background">
                     <img src="https://pinetree.vn/wp-content/uploads/2022/08/FPT-1.jpg" alt="">
                     <p>Company Name</p>
-                    <button>Xem thêm</button>
+                    <a href="partner-details-guest.html"><button>Xem thêm</button></a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 box-partner">
                 <div class="card-background">
                     <img src="https://pinetree.vn/wp-content/uploads/2022/08/FPT-1.jpg" alt="">
                     <p>Company Name</p>
-                    <button>Xem thêm</button>
+                    <a href="partner-details-guest.html"><button>Xem thêm</button></a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 box-partner">
                 <div class="card-background">
                     <img src="https://pinetree.vn/wp-content/uploads/2022/08/FPT-1.jpg" alt="">
                     <p>Company Name</p>
-                    <button>Xem thêm</button>
+                    <a href="partner-details-guest.html"><button>Xem thêm</button></a>
                 </div>
             </div>
         </div>
